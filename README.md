@@ -6,6 +6,6 @@ data.sql file which contains business informations is also excluded from the rep
  ## Used Technologies
 
   - Java 13
-  - Spring Boot 
+  - Spring Boot (incl. Spring Security for authentication and authorization)
   - JPA, Hibernate
   - PostgreSQL 
