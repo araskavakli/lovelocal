@@ -58,7 +58,7 @@ npm install
 ```HTML
 <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places&language=en"></script>
 ```
-5. Serve the project
+5. Serve the project.
 ```sh
 ng serve
 ```
