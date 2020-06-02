@@ -54,7 +54,7 @@ git clone https://github.com/araskavakli/lovelocal.git
 ```sh
 npm install
 ```
-4. Enter your API in `src/index.html` at line 31 by replacing your API Key with YOUR_API_Key.
+4. Enter your API in `src/index.html` at line 31 by replacing YOUR_API_KEY with your actual API Key.
 ```HTML
 <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places&language=en"></script>
 ```
