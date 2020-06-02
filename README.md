@@ -75,14 +75,7 @@ Users can set the search radius to load more stores.
 
 ## Notes
 
-For easier geoquerying and faster DB connection the app has been migrated to Google Firebase. Previously the backend was built with Java with the following stack:
-
-**Used Technologies**
-
-- Java 13
-- Spring Boot (incl. Spring Security for authentication and authorization)
-- JPA, Hibernate
-- PostgreSQL 
+For easier geoquerying and faster DB connection the app has been migrated to Google Firebase. Previously the backend was built with Java. Backend dir contains the legacy backend.
 
 
 ## Acknowledgements
