@@ -6,7 +6,6 @@
   * [Installation](#installation)
 * [Usage](#usage)
 * [Notes](#notes)
-  * [Used Technologies](#used-technologies)
 * [Acknowledgements](#acknowledgements)
 
 
@@ -67,7 +66,7 @@ For now, the DB includes only the stores in Porto, Portugal. Therefore the Googl
 
 For easier geoquerying and faster DB connection the app has been migrated to Google Firebase. Previously the backend was built with Java with the following stack:
 
-#### Used Technologies
+**Used Technologies**
 
 - Java 13
 - Spring Boot (incl. Spring Security for authentication and authorization)
