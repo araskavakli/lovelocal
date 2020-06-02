@@ -63,16 +63,15 @@ npm install
 ng serve
 ```
 
-
-<!-- ## Usage
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_ -->
-
 ## Usage
 
 For now, the DB includes only the stores in Porto, Portugal. Therefore the Google Places API's autocomplete feature in address search bar only returns the address in and around Porto.
+
+![Search](/img/search.png)
+
+Users can set the search radius to load more stores.
+
+![Map](/img/map.png)
 
 ## Notes
 
