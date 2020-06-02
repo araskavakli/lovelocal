@@ -71,7 +71,7 @@ For now, the DB includes only the stores in Porto, Portugal. Therefore the Googl
 
 Users can set the search radius to load more stores.
 
-![Map](/img/map.png)
+![Map](/img/map2.png)
 
 ## Notes
 
