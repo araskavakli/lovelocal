@@ -4,6 +4,7 @@
   * [Built With](#built-with)
 * [Getting Started](#getting-started)
   * [Installation](#installation)
+  * [Prerequisites](#prerequisites)
 * [Usage](#usage)
 * [Notes](#notes)
 * [Acknowledgements](#acknowledgements)
@@ -35,7 +36,7 @@ To run the project locally node.js and Angular must be installed.
 
 ### Prerequisites
 
-* [node.js](https://nodejs.org/en/download/)
+* [Node.js](https://nodejs.org/en/download/)
 * Angular
 ```sh
 npm install -g @angular/cli
@@ -49,13 +50,17 @@ npm install -g @angular/cli
 ```sh
 git clone https://github.com/araskavakli/lovelocal.git
 ```
-3. Install NPM packages
+3. Change to your local ~/lovelocal/frontend directory and install NPM packages
 ```sh
 npm install
 ```
 4. Enter your API in `src/index.html` at line 31 by replacing your API Key with YOUR_API_Key.
 ```HTML
 <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places&language=en"></script>
+```
+5. Serve the project
+```sh
+ng serve
 ```
 
 
