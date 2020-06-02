@@ -12,7 +12,6 @@ data.sql file which contains business informations is also excluded from the rep
 * [About the Project](#about-the-project)
   * [Built With](#built-with)
 * [Getting Started](#getting-started)
-  * [Prerequisites](#prerequisites)
   * [Installation](#installation)
 * [Usage](#usage)
 * [Acknowledgements](#acknowledgements)
@@ -21,7 +20,7 @@ data.sql file which contains business informations is also excluded from the rep
 
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://www.4local.store)
+[![Product Name Screen Shot][lovelocal]](https://www.4local.store)
 
 An online marketplace for local shops aiming to support businesses in Porto which are affected by the pandemic. The app lists the shops near the user coordinates and mark them on the map. The user can also view the customized pages of the shops and access information such as contact details, payment options and reviews (ongoing project). This repository only includes the backend of the Love Local project.
 
@@ -79,10 +78,4 @@ For easier geoquerying and faster DB connection the app has been migrated to Goo
 * [Unsplash](https://unsplash.com/)
 * [Bootstrap Studio](https://bootstrapstudio.io/)
 
-
-
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-<!-- [contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=flat-square -->
-
-
+[lovelocal]: https://github.com/araskavakli/lovelocal/img/LoveLocal.png
