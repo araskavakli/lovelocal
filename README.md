@@ -1,12 +1,3 @@
-# Love Local
-
-An online marketplace for local shops aiming to support businesses affected by the pandemic. The app lists the shops near the user coordinates and mark them on the map. The user can also view the customized pages of the shops and access information such as contact details, payment options and reviews (ongoing project). This repository only includes the backend of the Love Local project.
-data.sql file which contains business informations is also excluded from the repository. 
-
-
-
-
-<!-- TABLE OF CONTENTS -->
 ## Table of Contents
 
 * [About the Project](#about-the-project)
@@ -20,9 +11,11 @@ data.sql file which contains business informations is also excluded from the rep
 
 ## About The Project
 
-[![Product Name Screen Shot][lovelocal]](https://www.4local.store)
+![Love Local](/img/LoveLocal.png "Love Local")
 
-An online marketplace for local shops aiming to support businesses in Porto which are affected by the pandemic. The app lists the shops near the user coordinates and mark them on the map. The user can also view the customized pages of the shops and access information such as contact details, payment options and reviews (ongoing project). This repository only includes the backend of the Love Local project.
+Just like anywhere else in the world where, many local businesses in Porto are also experiencing financial difficulties during COVID-19 outbreak. Most of these stores either do not have a website, or do not offer online purchase to their customers.
+
+Love Local is an online marketplace for local stores aiming to support businesses in Porto which are affected by the pandemic. The web app lists stores near the user coordinates and mark them on the map. User can increase or decrease the search radius and load more stores. User can also view the customized pages of the shops and access information such as contact details, payment options and reviews (ongoing project).
 
 
 ### Built With
@@ -77,5 +70,3 @@ For easier geoquerying and faster DB connection the app has been migrated to Goo
 ## Acknowledgements
 * [Unsplash](https://unsplash.com/)
 * [Bootstrap Studio](https://bootstrapstudio.io/)
-
-[lovelocal]: https://github.com/araskavakli/lovelocal/img/LoveLocal.png
