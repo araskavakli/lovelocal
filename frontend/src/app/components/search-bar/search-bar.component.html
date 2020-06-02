@@ -1,0 +1,15 @@
+<div class="search-container">
+
+  <input type="text" class="search-input shadow-sm bg-white"
+         style="border: solid 0px rgb(221,221,221);border-radius: 4px;margin-right: 15px;padding-top: 20px;padding-bottom: 20px;font-family: Muli, sans-serif;"
+         placeholder="Enter your postal code or street address"
+         aria-label="Enter your postal code or street address"
+         ngx-google-places-autocomplete [options]="options" #placesRef="ngx-places"
+         (onAddressChange)="handleAddressChange($event)"/>
+
+  <button class="btn btn-light search-btn" type="button"
+          style="padding-right: 25px;padding-left: 25px;background-color: rgb(252,129,91);color: rgb(255,255,255);"
+          (click)="searchAddress()">
+    <i class="fa fa-search" style="font-size: 22px;"></i></button>
+
+</div>

@@ -1,0 +1,54 @@
+<div class="sticky">
+  <div class="card card-padding shadow border-0 slider-card">
+
+    <span class="mt-3">Search radius: {{sliderContinuousValue | number:'1.2-2'}} km</span>
+    <mat-slider
+      [max]="3"
+      [min]="0.15"
+      [step]="0.15"
+      [thumbLabel]="false"
+      [(ngModel)]="sliderValue"
+      (ngModelChange)="onChange($event)"
+      (input)="onInputChange($event)">
+    </mat-slider>
+
+  </div>
+
+  <br>
+  <agm-map *ngIf="userLocation" [latitude]=(userLocation.latitude) [longitude]=(userLocation.longitude) [zoom]="15" [styles]="mapStyles" [fitBounds]="true">
+
+    <agm-marker [longitude]="userLocation.longitude"
+                [latitude]="userLocation.latitude"
+                [agmFitBounds]="true">
+    </agm-marker>
+
+    <agm-marker-cluster
+      imagePath="https://raw.githubusercontent.com/googlemaps/v3-utility-library/master/markerclustererplus/images/m">
+
+
+      <agm-marker *ngFor="let marker of markers"
+                  [longitude]="marker.position.geopoint.longitude"
+                  [latitude]="marker.position.geopoint.latitude"
+                  [iconUrl]="marker.icon"
+                  [agmFitBounds]="true">
+        <agm-info-window>
+          <a routerLink="/stores/{{marker.id}}" style="color: rgb(0, 0, 0); text-decoration: none;">
+            <span style="font-size:17px"><b>{{marker.name | titlecase}}</b></span>
+            <br>
+            <span style="font-size:14px"><i>{{marker.type | titlecase}}</i></span>
+          </a>
+        </agm-info-window>
+      </agm-marker>
+    </agm-marker-cluster>
+
+    <agm-circle [latitude]="(userLocation.latitude)"
+                [longitude]="(userLocation.longitude)"
+                [radius]="((radius$ | async) * 1000)"
+                [fillColor]="'gray'"
+                [fillOpacity]="0.2"
+                [circleDraggable]="false"
+                [editable]="false">
+    </agm-circle>
+
+  </agm-map>
+</div>

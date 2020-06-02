@@ -1,0 +1,84 @@
+.navbar-collapse {
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+  -ms-flex-positive: 1;
+  flex-grow: 0!important;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.orange-allert {
+  color: #fc815b;
+}
+
+.address-text {
+  font-weight: 300;
+  color: rgb(170,170,170);
+  font-size: 12px;
+}
+
+.fa.fa-star.mb-auto {
+  /*margin-top: 4px;*/
+  font-size: 20px;
+  color: rgb(252,129,91);
+}
+
+.card-group > .card:not(:last-child) {
+  border: none;
+  padding: 15px;
+  margin-right: 10px;
+}
+
+.delivery-type {
+  font-weight: 300;
+  padding: 0px;
+  color: rgb(0,0,0);
+  font-size: 12px;
+}
+
+.row.row-card {
+  /*margin-bottom: 9px!important;*/
+}
+
+.btn.btn-primary.btn-full {
+  border: 0px;
+}
+
+@media (min-width:768px) {
+  .navbar-expand-md {
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+}
+
+.row.row-card.row-margin {
+}
+
+.row.row-card.row-margin {
+  margin-bottom: 38px!important;
+}
+
+a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+@media (min-width: 300px) {
+  .row.row-card.row-margin {
+    margin-bottom: 10px!important;
+  }
+}
+
+@media (min-width: 576px) {
+  .navbar-light .navbar-text {
+    color: rgba(0,0,0,.5);
+    padding-left: 17px;
+  }
+}
+
+.card-img-top.w-100.d-block {
+  border-radius: 4px;
+}
+

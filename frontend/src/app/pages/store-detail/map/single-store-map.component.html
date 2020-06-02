@@ -1,0 +1,18 @@
+<agm-map [latitude]=(store.latitude) [longitude]=(store.longitude) [zoom]="15" [styles]="mapStyles">
+
+  <agm-marker
+    [longitude]="store.position.geopoint.longitude"
+    [latitude]="store.position.geopoint.latitude"
+    [iconUrl]="'https://cdn3.iconfinder.com/data/icons/simple-files-1/128/Location-48.png'"
+  >
+    <agm-info-window>
+      <a routerLink="/stores/{{store.id}}" style="color: rgb(0, 0, 0); text-decoration: none;">
+        <span style="font-size:17px"><b>{{store.name | titlecase}}</b></span>
+        <br>
+        <span style="font-size:14px"><i>{{store.type | titlecase}}</i></span>
+      </a>
+    </agm-info-window>
+
+  </agm-marker>
+
+</agm-map>

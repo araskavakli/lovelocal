@@ -1,0 +1,23 @@
+<div *ngIf="stores" class="pt-5 map-wrapper hide" style="position: relative;">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 offset-lg-0 pt-5">
+        <div class="pt-5">
+          <h3 class="h2 small-h2" style="font-family: 'Muli', sans-serif;font-size:14px"><span
+            class="orange-allert">{{stores.length}} STORES</span> NEAR YOUR LOCATION</h3>
+        </div>
+        <h1>Stores in Porto</h1>
+        <div class="row">
+          <div *ngFor="let store of stores" class="col col-sm-12 col-md-6">
+            <a routerLink="/stores/{{store.id}}" style="color: rgb(0, 0, 0); text-decoration: none;">
+              <app-store-card [store]="store"></app-store-card>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 pr-0" style="padding-top: 95px;padding-bottom:50px;  text-align: center">
+        <app-search-results-map [markers]="stores" [lat]="(location.lat)" [lon]="(location.lng)" (radiusEmitter)="increaseRadius($event)"></app-search-results-map>
+      </div>
+    </div>
+  </div>
+</div>

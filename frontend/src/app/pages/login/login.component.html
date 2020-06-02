@@ -1,0 +1,25 @@
+<div class="login-clean padding-top" style="padding-top: 150px;">
+  <form [formGroup]="loginForm" (submit)="loginUser()" class="card-padding card shadow-none bg-white" method="post"
+        style="font-family: Muli, sans-serif;width: 320px;">
+    <h2 class="sr-only">Login Form</h2>
+    <div class="d-xl-flex flex-column align-items-center d-flex justify-content-center" style="font-weight: normal;">
+      <div class="m-4 rounded-circle shadow p-4"
+           style="height: 75px;width: 75px;background-image: url(&quot;assets/img/icon-ll.svg&quot;);background-repeat: no-repeat;background-size: auto;background-position: center;"></div>
+      <h4 class="text-center m-4">Log in <br> to your store</h4>
+    </div>
+    <div class="form-group">
+      <input class="form-control bg-white pl-0" formControlName="username" type="username" name="username" placeholder="Email"
+             style="font-family: Muli, sans-serif;">
+    </div>
+    <div class="form-group">
+      <input class="form-control bg-white pl-0" formControlName="password" type="password" name="password"
+             placeholder="Password">
+    </div>
+    <div class="form-group">
+      <button class="btn btn-primary btn-block" type="submit" [disabled]="!loginForm.valid"
+              style="background-color: rgb(252,129,91);">Log In
+      </button>
+    </div>
+    <a class="forgot" href="#">Forgot your username or password?</a>
+  </form>
+</div>

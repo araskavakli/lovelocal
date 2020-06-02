@@ -1,0 +1,37 @@
+<section *ngIf="stores$" class="features-icons bg-white text-center">
+  <div class="pt-5 map-wrapper hide" style="position: relative;">
+    <div class="container">
+      <div class="row">
+        <div class="offset-lg-0 pt-sm-0 text-left col-md-12 col-lg-8">
+          <div class="pt-sm-0">
+            <h2
+              class="h2 small-h2"
+              style="font-family: 'Muli', sans-serif; font-size: 14px;"
+            >
+              <span class="orange-allert">{{(stores$ | async)?.length}}</span> NEAR YOUR LOCATION
+            </h2>
+            <h1 class="pb-3">Stores in Porto</h1>
+            <div class="row">
+              <div
+                *ngFor="let store of stores$ | async"
+                class="col col-sm-6"
+                style="
+                  height: auto;
+                  padding: 0pz;
+                  margin: 0px;
+                  margin-bottom: 25px;
+                ">
+                <a routerLink="/stores/{{store.id}}" style="color: rgb(0, 0, 0); text-decoration: none;">
+                  <app-store-card [store]="store"></app-store-card>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 pr-0" style="padding-top: 95px;padding-bottom:50px;">
+          <app-geoquery-map></app-geoquery-map>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

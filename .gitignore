@@ -36,5 +36,4 @@ build/
 *.sql
 
 ### Build folders ###
-frontend/
 docs/

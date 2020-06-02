@@ -1,0 +1,31 @@
+agm-map {
+  padding-top:275px!important;
+  height: 500px!important;
+  width: 100%;
+}
+
+.sticky {
+  top: 100px;
+  position: sticky;
+}
+
+mat-slider {
+  width: auto;
+  position: relative;
+  margin-left: 50px;
+  margin-right: 50px;
+
+}
+
+::ng-deep mat-slider.mat-accent .mat-slider-thumb{
+  background-color: #FC815B;
+}
+
+::ng-deep mat-slider.mat-slider-horizontal .mat-slider-track-fill {
+  background-color: #FC815B;
+}
+
+.slider-card {
+  margin-top: 90px;
+  padding-bottom: 10px;
+}

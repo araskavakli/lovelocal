@@ -1,0 +1,9 @@
+/*map-padding{*/
+/*  padding-top:275px!important;*/
+/*}*/
+
+#map {
+  padding-top:275px!important;
+  height: 500px;
+  width: 100%;
+}

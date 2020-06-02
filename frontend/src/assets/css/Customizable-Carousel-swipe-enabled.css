@@ -1,0 +1,76 @@
+star-left {
+  display: inline;
+  float: right!important;
+}
+
+p {
+}
+
+.review-text {
+  width: 100%;
+  display: block;
+}
+
+.col-xl-3.card-intro {
+  padding: 0px;
+}
+
+.card-body.text-left.card-no-p {
+  padding: 10px;
+}
+
+.no-padding {
+  padding: 0px!important;
+}
+
+.border-bottom {
+  border-bottom-style: solid;
+  border-color: rgb(228,228,228);
+  border-width: 1px;
+  margin: 0;
+  width: 100%;
+  height: auto;
+  padding: 0px;
+  margin-bottom: 0px;
+}
+
+.bold-text {
+}
+
+.bold-text {
+  font-weight: 800!important;
+}
+
+.raiting-star {
+  font-size: 48px;
+  color: rgb(252,136,101)!important;
+}
+
+.raiting {
+  font-size: 32px!important;
+}
+
+.icon-open {
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background-color: rgb(0,211,0);
+  position: absolute;
+  top: 13px;
+  left: 0px;
+}
+
+.relative {
+  position: relative!important;
+}
+
+@media (min-width: 300px) {
+  .col-md-4.col-xl-4.d-md-flex.d-lg-flex.d-xl-flex.justify-content-md-end.justify-content-lg-end.justify-content-xl-end.relative {
+    padding-left: 15px!important;
+  }
+}
+
+.d-none.d-print-block.d-sm-none.d-md-none.d-lg-block.d-xl-block.map-main.rounded.shadow-sm.map-small {
+  height: 400px!important;
+}
+

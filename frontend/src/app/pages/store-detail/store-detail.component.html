@@ -1,0 +1,115 @@
+<div *ngIf="store" class="pt-5 padding-top">
+  <div></div>
+  <div class="container pb-5">
+    <h1 class="pb-3 mb-5">{{store.name | titlecase}}</h1>
+    <div class="row">
+      <div class="col-lg-4 col-xl-3 card-intro">
+        <div class="card card-padding shadow mb-4 border-0">
+          <div class="card-body text-left card-no-p pr-4">
+            <div *ngIf="store.rating" class="row row-card pb-1 pt-1"
+                 style="border-bottom-style: solid;border-color: rgb(228,228,228);border-width: 1px;margin: 0;width: 100%;height: auto;padding: 0px;margin-bottom: 0px;">
+              <div class="col-md-6 col-lg-6 col-xl-12" style="padding: 0px;">
+                <div class="d-sm-flex d-md-flex d-lg-flex d-xl-flex justify-content-xl-start align-items-xl-center"><i
+                  class="fa fa-star mr-3 raiting-star" style="margin-right: 8px;opacity: 1;color: rgb(0,0,0);"></i>
+                  <div class="delivery-type raiting">{{store.rating | number:'1.1-1'}}</div>
+                </div>
+              </div>
+            </div>
+            <div class="row row-card pb-1 pt-1"
+                 style="border-bottom-style: solid;border-color: rgb(228,228,228);border-width: 1px;margin: 0;width: 100%;height: auto;padding: 0px;margin-bottom: 0px;">
+              <div class="col-md-8 col-lg-8 col-xl-8" style="padding: 0px;">
+                <div class="store-info bold-text"
+                     style="padding-top: 10px;padding-bottom: 10px;margin-right:30px!important">{{store.type}}
+                </div>
+              </div>
+              <div
+                class="col-md-4 col-xl-4 d-md-flex d-lg-flex d-xl-flex justify-content-md-end justify-content-lg-end justify-content-xl-end relative"
+                style="padding: 0px;">
+                <div class="store-info bold-text" style="  padding-top: 10px; padding-bottom: 10px;"> Open Now
+                </div>
+                <div class="icon-open"></div>
+              </div>
+            </div>
+            <div class="row row-card border-bottom pr-0 pl-0" style="margin: 0;width: 100%;height: auto;">
+              <div class="col-lg-11 col-xl-8" style="padding: 0px;">
+                <div class="row no-padding" style="margin: 0px;">
+                  <div class="col-lg-12 col-xl-12" style="padding: 0px;">
+                    <div class="d-sm-flex d-md-flex d-lg-flex d-xl-flex justify-content-xl-start align-items-xl-center">
+                      <i class="fa fa-truck" style="margin-right: 8px;opacity: 1;color: rgb(0,0,0);"></i>
+                      <div class="delivery-type">Delivery</div>
+                    </div>
+                  </div>
+                  <div class="col-lg-11 col-xl-12" style="padding: 0px;">
+                    <div
+                      class="d-sm-flex d-md-flex d-xl-flex align-items-sm-center align-items-md-center align-items-xl-center">
+                      <i class="fas fa-walking" style="margin-right: 8px;opacity: 1;color: rgb(0,0,0);width: 16px;"></i>
+                      <div class="delivery-type">Pick Up</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-xl-4 d-xl-flex justify-content-xl-end" style="padding: 0px;">
+                <div class="d-flex d-xl-flex flex-row justify-content-xl-end align-items-xl-center"
+                     style="width: 100%;height: auto;"><i
+                  class="fa fa-cc-visa d-xl-flex mb-auto justify-content-xl-center"
+                  style="width: auto;opacity: 1;color: rgb(0,0,0);font-size: 20px;"></i><i
+                  class="fa fa-cc-mastercard d-xl-flex mb-auto justify-content-xl-center"
+                  style="width: auto;opacity: 1;color: rgb(0,0,0);font-size: 20px;"></i>
+                  <i
+                    class="fas fa-money-bill d-xl-flex mb-auto justify-content-xl-center"
+                    style="width: auto;opacity: 1;color: rgb(0,0,0);font-size: 20px;"></i>
+                </div>
+              </div>
+            </div>
+            <div class="row row-card border-bottom pr-0 pl-0"
+                 style="margin: 0;width: 100%;height: auto;margin-bottom: 15px;">
+              <div class="col-lg-12 col-xl-12" style="padding: 0px;">
+                <div class="row no-padding" style="margin: 0px;">
+                  <div class="col-lg-12 col-xl-12" style="padding: 0px;">
+                    <div class="d-sm-flex d-md-flex d-lg-flex d-xl-flex justify-content-xl-start align-items-xl-center">
+                      <i class="fa fa-map-marker mr-3" style="margin-right: 8px;opacity: 1;color: rgb(0,0,0);"></i>
+                      <div class="delivery-type">{{store.address}}</div>
+                    </div>
+                  </div>
+                  <div class="col-lg-11 col-xl-12" style="padding: 0px;">
+                    <div *ngIf="store.phone !==''"
+                         class="d-sm-flex d-md-flex d-xl-flex align-items-sm-center align-items-md-center align-items-xl-center">
+                      <i class="fas fa-phone" style="margin-right: 8px;opacity: 1;color: rgb(0,0,0);width: 16px;"></i>
+                      <div class="delivery-type">{{store.phone}}</div>
+                    </div>
+                    <div *ngIf="store.site !==''"
+                         class="d-sm-flex d-md-flex d-xl-flex align-items-sm-center align-items-md-center align-items-xl-center">
+                      <i class="fas fa-globe" style="margin-right: 8px;opacity: 1;color: rgb(0,0,0);width: 16px;"></i>
+                      <div class="delivery-type">
+                        <a href="{{store.site}}">
+                          {{store.site}}
+                        </a>
+                      </div>
+                    </div>
+                    <div *ngIf="store.email !==''"
+                         class="d-sm-flex d-md-flex d-xl-flex align-items-sm-center align-items-md-center align-items-xl-center">
+                      <i class="fas fa-envelope"
+                         style="margin-right: 8px;opacity: 1;color: rgb(0,0,0);width: 16px;"></i>
+                      <div class="delivery-type">
+                        <a href="{{store.email}}">
+                          {{store.email}}
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-8 col-xl-6 offset-lg-0 pt-sm-0 pr-0 pl-sm-0 pl-md-3">
+        <app-carousel></app-carousel>
+        <app-review *ngFor="let review of reviews; let i = index" [review]="reviews[i]"></app-review>
+      </div>
+      <div class="col-xl-3 pb-3 pr-0">
+        <single-store-map [store]="store"></single-store-map>
+      </div>
+    </div>
+  </div>
+</div>

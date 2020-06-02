@@ -1,0 +1,17 @@
+<div class="d-flex flex-column orange-text mb-4 border-bottom">
+  <div>
+    <div>
+      <img *ngFor="let i of ' '.repeat(5 - review.review_rating).split('')" class="yelp_star"
+           src="../../../../assets/img/star-empty.svg">
+      <img *ngFor="let i of ' '.repeat(review.review_rating).split('')" class="yelp_star"
+           src="../../../../assets/img/star-orange.svg">
+    </div>
+    <div
+      class="yelp_first">
+      <h4>{{review.author_name | titlecase}}</h4>
+    </div>
+  </div>
+  <div>
+    <p class="p-sm-0" style="font-family: Muli, sans-serif;">{{review.review_text}}<br></p>
+  </div>
+</div>
