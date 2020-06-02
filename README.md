@@ -5,8 +5,9 @@
 * [Getting Started](#getting-started)
   * [Installation](#installation)
 * [Usage](#usage)
+* [Notes](#notes)
+  * [Used Technologies](#used-technologies)
 * [Acknowledgements](#acknowledgements)
-
 
 
 ## About The Project
@@ -15,7 +16,11 @@
 
 Just like anywhere else in the world where, many local businesses in Porto are also experiencing financial difficulties during COVID-19 outbreak. Most of these stores either do not have a website, or do not offer online purchase to their customers.
 
-Love Local is an online marketplace for local stores aiming to support businesses in Porto which are affected by the pandemic. The web app lists stores near the user coordinates and mark them on the map. User can increase or decrease the search radius and load more stores. User can also view the customized pages of the shops and access information such as contact details, payment options and reviews (ongoing project).
+Love Local is an online marketplace for local stores aiming to support businesses in Porto which are affected by the pandemic. The web app lists stores near the user coordinates and mark them on the map. User can increase or decrease the search radius and load more stores. User can also view the customized pages of the shops and access information such as contact details, payment options and reviews (ongoing project). 
+
+The deployed project can be seen here:
+
+https://www.4local.store/
 
 
 ### Built With
@@ -54,12 +59,15 @@ Use this space to show useful examples of how a project can be used. Additional 
 
 _For more examples, please refer to the [Documentation](https://example.com)_ -->
 
+## Usage
 
-## NOTE   
+For now, the DB includes only the stores in Porto, Portugal. Therefore the Google Places API's autocomplete feature in address search bar only returns the address in and around Porto.
+
+## Notes
 
 For easier geoquerying and faster DB connection the app has been migrated to Google Firebase. Previously the backend was built with Java with the following stack:
 
-### Used Technologies
+#### Used Technologies
 
 - Java 13
 - Spring Boot (incl. Spring Security for authentication and authorization)
