@@ -12,7 +12,6 @@ data.sql file which contains business informations is also excluded from the rep
 * [About the Project](#about-the-project)
   * [Built With](#built-with)
 * [Getting Started](#getting-started)
-  * [Prerequisites](#prerequisites)
   * [Installation](#installation)
 * [Usage](#usage)
 * [Acknowledgements](#acknowledgements)
