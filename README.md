@@ -50,7 +50,7 @@ npm install -g @angular/cli
 ```sh
 git clone https://github.com/araskavakli/lovelocal.git
 ```
-3. Change to your local ~/lovelocal/frontend directory and install NPM packages
+3. Change to your local ~/lovelocal/frontend directory and install NPM packages.
 ```sh
 npm install
 ```
