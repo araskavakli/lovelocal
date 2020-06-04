@@ -70,13 +70,20 @@ For now, the DB includes only the stores in Porto, Portugal. Therefore the Googl
 
 ![Search](/img/search.png)
 
+
+
+
 Users can set the search radius to load more stores.
 
 ![Map](/img/map2.png)
 
+
+
+
 Users can set visit customized store pages to get more information.
 
 ![Detial](/img/detail-page.png)
+
 
 ## Notes
 
@@ -85,5 +92,5 @@ For easier geoquerying and faster DB connection the app has been migrated to Goo
 
 ## Acknowledgements
 * Thanks to Eray Damar from fünf Digital Design Studio, Porto for page design & layout.
-* [Unsplash](https://unsplash.com/)
-* [Bootstrap Studio](https://bootstrapstudio.io/)
+* Store data is acquired from Google Maps.
+* [Unsplash](https://unsplash.com/) was used for store cover images.
