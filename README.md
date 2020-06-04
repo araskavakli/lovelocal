@@ -73,11 +73,16 @@ Users can set the search radius to load more stores.
 
 ![Map](/img/map2.png)
 
+Users can set visit customized store pages to get more information.
+
+![Detial](/img/detail-page.png)
+
 ## Notes
 
 For easier geoquerying and faster DB connection the app has been migrated to Google Firebase. Previously the backend was built with Java. Backend dir contains the legacy backend.
 
 
 ## Acknowledgements
+* Thanks to Eray Damar from fünf Digital Design Studio, Porto for page design & layout.
 * [Unsplash](https://unsplash.com/)
 * [Bootstrap Studio](https://bootstrapstudio.io/)
