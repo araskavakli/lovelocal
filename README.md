@@ -25,7 +25,7 @@ https://www.4local.store
 
 ### Built With
 
-* [Angular](https://angular.io)
+* [Angular 9](https://angular.io)
 * [Bootstrap](https://getbootstrap.com)
 * [Firebase](https://firebase.google.com)
 * [Google Maps Web API](https://developers.google.com/maps/documentation/javascript/tutorial)
