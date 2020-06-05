@@ -93,4 +93,4 @@ For easier geoquerying and faster DB connection the app has been migrated to Goo
 ## Acknowledgements
 * Thanks to Eray Damar from fünf Digital Design Studio, Porto for page design & layout.
 * Business data is acquired from Google Maps.
-* [Unsplash](https://unsplash.com/) is used for store cover images.
+* All images are taken from [Unsplash](https://unsplash.com/).
