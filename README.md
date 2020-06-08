@@ -91,6 +91,6 @@ For easier geoquerying and faster DB connection the app has been migrated to Goo
 
 
 ## Acknowledgements
-* Thanks to Eray Damar from fünf Digital Design Studio, Porto for page design & layout.
+* Thanks to Eray Damar from fünf Digital Design Studio, Porto for design & layout.
 * Business data is acquired from Google Maps.
 * All images are taken from [Unsplash](https://unsplash.com/).
