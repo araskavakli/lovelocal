@@ -20,7 +20,7 @@ Love Local is an online marketplace for local stores aiming to support businesse
 
 The deployed project can be seen here:
 
-https://www.4local.store
+[https://www.4local.store](https://for-local-app.web.app/)
 
 
 ### Built With
